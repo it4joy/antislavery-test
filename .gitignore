@@ -1,0 +1,9 @@
+/.babelrc
+/build
+/dist
+/node_modules
+/src/fonts
+/src/images
+/src/img
+/test
+/tmp
