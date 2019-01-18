@@ -10,7 +10,7 @@
 }
 
 .body {
-  font-size: $font-size-base;
+  font-size: $font-size-md;
 }
 
 .app-wrapper {
@@ -20,6 +20,13 @@
 
 .main-content {
   @include flex(1, 0, auto);
+}
+
+.std-content-box {
+  padding: 1.6rem 2.4rem;
+  background: $white;
+  box-shadow: $box-shadow-custom;
+  border-radius: $border-radius-sm;
 }
 
 .std-negative-margin {

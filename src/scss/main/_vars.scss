@@ -13,18 +13,29 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black: #000000;
 
-$custom-light-gray: #f5f5f5;
+$custom-light-gray: #f2f2f2;
 $custom-mid-gray: lighten($black, 60%);
 $custom-dark-gray: #272831;
+$custom-heading-black: #1a1818;
+$custom-black: rgba(0, 0, 0, 0.87);
+
+$custom-gray-100: $custom-light-gray;
+$custom-gray-200: rgba(0, 0, 0, 0.12);
+$custom-gray-300: rgba(0, 0, 0, 0.37);
+$custom-gray-400: rgba(0, 0, 0, 0.47);
+$custom-gray-500: rgba(0, 0, 0, 0.57);
 
 $bright-blue: #4e82fe;
 $blue: #6596ff;
 $blue-turquoise: #5aa4ff;
 
-$lilac-pink: #ff7f7c;
+$custom-green: #00aa87;
+$custom-green-hover: #00816c;
+$custom-green-pressed: #00826c;
+$custom-green-link-visited: #006554;
 
-$body-bg: $white;
-$body-color: $black;
+$body-bg: $custom-light-gray;
+$body-color: $custom-black;
 
 
 // Typography
@@ -46,6 +57,7 @@ $font-weight-bold: 700;
 
 $font-weight-base: $font-weight-normal;
 $line-height-base: 1.5;
+$custom-line-height-base: 1.6;
 
 $h1-font-size: $font-size-lg + 2rem;
 $h2-font-size: $font-size-lg + 1.6rem;
@@ -54,9 +66,10 @@ $h4-font-size: $font-size-lg + 0.8rem;
 $h5-font-size: $font-size-lg + 0.4rem;
 $h6-font-size: $font-size-lg;
 
-$link-color: $bright-blue; // tmp
+$link-color: $custom-green;
 $link-decoration: none;
-$link-hover-color: darken($link-color, 10%); // tmp
+$link-hover-color: $custom-green-hover;
+$link-visited-color: $custom-green-link-visited;
 $link-hover-decoration: none;
 
 $headings-margin-bottom: ($spacer / 2);
@@ -81,9 +94,11 @@ $border-color: $gray-300; // tmp
 $border-radius: .6rem;
 $border-radius-sm: .3rem;
 $border-radius-lg: .9rem;
+$custom-border-radius: .2rem;
 
 $box-shadow: 0 .1rem .3rem rgba($black, .08), 0 .1rem .1rem rgba($black, .05);
-$box-shadow-custom: 0 0 .5rem rgba($blue, .95);
+$box-shadow-custom: 0 .2rem .2rem rgba(0, 0, 0, .12);
+$box-shadow-custom-lg: 0 .8rem .8rem rgba(0, 0, 0, .12);
 //$box-shadow-sm: 0 .125rem .25rem rgba($black, .075); // tmp
 //$box-shadow-lg: 0 1rem 3rem rgba($black, .175); // tmp
 
@@ -119,10 +134,14 @@ $btn-link-disabled-color: $gray-600;
 
 // Forms
 
+$form-group-margin-bottom: 1rem;
+
 $label-margin-bottom: .5rem;
 
 $input-padding-y: 1rem;
+$custom-input-padding-y: .8rem;
 $input-padding-x: 1.5rem;
+$custom-input-padding-x: 1.6rem;
 $input-line-height: 1;
 
 // note: also do it for `sm` and `lg` inputs
@@ -135,9 +154,12 @@ $input-disabled-bg: $gray-200;
 $input-color: $gray-700; // default
 $input-border-width: $border-width;
 $input-border-radius: $border-radius;
+$custom-input-border-radius: $custom-border-radius;
 $input-border-color: $gray-300;
+$custom-input-border-color: $custom-gray-200;
 
 $input-placeholder-color: $gray-600;
+$custom-input-placeholder-color: $custom-gray-300;
 
 
 // Z-index

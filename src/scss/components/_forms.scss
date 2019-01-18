@@ -1,22 +1,35 @@
+.form-group {
+  margin-bottom: $form-group-margin-bottom;
+}
+
+.inline-control-group {
+  @include display-flex-mixin(flex, row, flex-start, center);
+  height: 100%;
+}
+
 .form-control {
   position: relative;
   display: block;
   width: 100%;
-  padding: $input-padding-y $input-padding-x;
+  padding: $custom-input-padding-y $custom-input-padding-x;
   background: $input-bg;
   border-width: $input-border-width;
-  border-color: $input-border-color;
-  border-radius: $input-border-radius;
+  border-color: $custom-input-border-color;
+  border-radius: $custom-input-border-radius;
   font-family: $font-family-base;
   font-size: $font-size-base;
   line-height: $input-line-height;
   color: $input-color;
+  &:hover {
+    border-color: $custom-gray-300;
+  }
   &:focus {
     outline: 0;
-    box-shadow: $box-shadow-custom;
+    border-color: $custom-gray-300;
+    color: $custom-black;
   }
   &::placeholder {
-    color: $input-placeholder-color;
+    color: $custom-input-placeholder-color;
   }
   &.custom-select {
     color: $custom-mid-gray;
@@ -35,6 +48,14 @@ option[attr="disabled"] {
 
 // Theme
 
+.custom-inline-control-group {
+  .label {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 0.8rem;
+  }
+}
+
 .custom-control-group {
   margin-bottom: 1.5rem;
   .label {
@@ -49,8 +70,6 @@ option[attr="disabled"] {
 .custom-select-wrapper {
   position: relative;
   &::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f107";
     position: absolute;
     top: 50%;
     right: 0.3rem;
@@ -63,52 +82,28 @@ option[attr="disabled"] {
     color: $custom-mid-gray;
   }
   &.unfolded::before {
-    content: "\f106";
+    
   }
 }
 
-.control-switcher {
+.custom-checkbox {
   position: relative;
-  @include display-flex-mixin(flex, row, space-between, center);
-  overflow: hidden;
-  height: 4rem;
-  box-shadow: $box-shadow;
-  .data-items-wrapper {
+  margin-right: 0.8rem;
+  &::before {
+    content: "";
     position: absolute;
-    top: -4rem;
-    left: 0;
-    @include display-flex-mixin(flex, column, space-between, center);
-    overflow: hidden;
-    width: 100%;
+    top: -3px;
+    width: 18px;
+    height: 18px;
+    background: $custom-light-gray;
+    border: 2px solid $custom-gray-300;
+    border-radius: $custom-border-radius;
   }
-  .data-item {
-    display: block;
-    margin: 1rem 0;
-    padding: 0.3rem 1rem;
-    width: 100%;
-    height: 2rem;
-    text-align: left;
-    color: $black;
+  &:hover::before {
+    border-color: $custom-gray-500;
   }
-  .carets {
-    position: absolute;
-    right: 1.5rem;
-    @include display-flex-mixin(flex, column, center, flex-end);
-    width: 2rem;
-    height: 2rem;
-    text-align: right;
-    .fa {
-      position: relative;
-      &:hover {
-        cursor: pointer;
-        color: $black;
-      }
-    }
-    .fa:first-child {
-      top: 0.3rem;
-    }
-    .fa:last-child {
-      bottom: 0.3rem;
-    }
+  &:checked::before {
+    background: url("../imgs/checked.png") no-repeat -1px -1px $custom-light-gray;
+    border-color: $custom-green;
   }
 }

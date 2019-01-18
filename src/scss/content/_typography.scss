@@ -1,8 +1,17 @@
 // links
 
 .link {
+  display: inline-block;
   &:hover {
     cursor: pointer;
+    color: $link-hover-color;
+  }
+}
+
+.link-gray {
+  color: rgba(0, 0, 0, 0.37);
+  &:hover {
+    color: $custom-gray-400;
   }
 }
 
@@ -52,10 +61,51 @@
 }
 
 
+// Text transform classes
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+
 // Custom headings
 
-.corp-heading {
-  margin-bottom: 3rem;
-  font-family: 'Rubik Light', Tahoma, sans-serif;
-  color: $blue;
+.extra-heading {
+  font-family: 'Akzidenz-Grotesk Pro Medium', Tahoma, sans-serif;
+  font-size: 8.2rem;
+  color: $custom-heading-black;
+}
+
+.custom-h2 {
+  line-height: 3.2rem;
+  font-size: 2.3rem;
+}
+
+.custom-h4 {
+  line-height: 2.4rem;
+  font-size: 1.6rem;
+}
+
+
+// Icons
+
+.material-icon-png {
+  display: inline-block;
+  margin-right: 1rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  &.search-icon {
+    background: url("../imgs/search.png") no-repeat center;
+  }
+  &.check-icon {
+    background: url("../imgs/check.png") no-repeat center;
+  }
 }

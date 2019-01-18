@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/it4joy/superjob_test"
   },
   "bugs": {
     "url": ""
   },
-  "homepage": "",
+  "homepage": "https://github.com/it4joy/superjob_test/blob/master/README.md",
   "author": "Igor Ivanov",
   "license": "GPL-3.0",
   "dependencies": {

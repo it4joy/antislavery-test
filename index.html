@@ -19,243 +19,164 @@
 
       <header class="header">
         <div class="container">
-          <div class="row">
-            <div class="col-xs">
-              <nav class="nav top-nav">
-                <a href="/" class="link logo">
-                  <div class="logo-block">
-                    <span class="logo-font">Index<span class="logo-font-piece">Box</span></span>
-                  </div>
-                </a>
-                <button type="button" class="btn nav-toggler" data-target="#topNavSlimScrContent">
-                  <i class="fa fa-bars top-nav-toggler-icon"></i>
-                  <i class="fa fa-times top-nav-toggler-icon-close"></i>
-                </button>
-
-                <div class="nav-collapse nav-list-wrapper" id="topNavSlimScrContent">
-                  <ul class="list">
-                    <li class="nav-item promo">
-                      <a href="#" class="link">Get more out of IndexBox - Go Pro</a>
-                    </li>
-                    <li class="nav-item active">
-                      <a href="#" class="link">Download data</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="link">Analyze data</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="link">Report writing</a>
-                    </li>
-                    <li class="nav-item penultimate-item">
-                      <a href="#" class="link">Sign up</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="link">Sign in</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-          </div>
+          <div class="extra-heading">Список проектов</div>
         </div>
       </header>
 
       <main class="main-content">
-        <div class="searching-items-wrapper">
-          <div class="container">
-            <form class="searching-items-form">
-              <div class="row">
-                <div class="col-md-5 col-xs-12">
-                  <div class="custom-select-wrapper" data-tag="products">
-                    <select class="form-control select custom-select"></select>
-                  </div>
-                </div>
-                <div class="col-md col-xs-12">
-                  <div class="custom-select-wrapper" data-tag="countries">
-                    <select class="form-control select custom-select"></select>
-                  </div>
-                </div>
-                <div class="col-md col-xs-12">
-                  <div class="custom-select-wrapper" data-tag="factors">
-                    <select class="form-control select custom-select"></select>
-                  </div>
-                </div>
-                <div class="col-md col-xs-12">
-                  <div class="custom-select-wrapper">
-                    <select class="form-control select custom-select">
-                      <option selected disabled>Period</option>
-                    </select>
-                  </div>
+        <div class="container">
+          <div class="top-controls">
+            <div class="row">
+              <div class="col-md-4">
+                <input type="search" class="form-control" placeholder="Поиск по вакансиям">
+              </div>
+              <div class="col-md-4">
+                <div class="inline-control-group custom-inline-control-group">
+                  <input type="checkbox" class="custom-checkbox" id="onlyOpenedPositions">
+                  <label for="onlyOpenedPositions" class="label">Только открытые</label>
                 </div>
               </div>
-            </form>
+              <div class="col-md-4">
+                <div class="add-project-btn-wrapper">
+                  <button type="button" class="btn btn-primary add-project-btn">Добавить проект</button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="data-area">
-          <div class="output-options-wrapper">
-            <div class="container">
-              <div class="output-options-sort-wrapper">
+          <div class="project-items-wrapper">
+            <!-- Project item starts -->
+            <div class="project-item std-content-box">
+              <h2 class="custom-h2">Название первого проекта</h2>
+              <div class="project-item-actions">
                 <div class="row">
-                  <div class="col-md-3 col-xs">
-                    <span class="sort-label">Output Formating Options show by</span>
+                  <div class="col-md-9">
+                    <h4 class="custom-h4 vacancies-amount">34 вакансии</h4>
+                    <a href="#" class="link link-add-vacancy">Добавить вакансию</a>
                   </div>
-                  <div class="col">
-                    <div class="sort-btn-wrapper">
-                      <button type="button" class="btn-link btn-sort active">Factor</button>
-                      <button type="button" class="btn-link btn-sort">Country/Region</button>
-                      <button type="button" class="btn-link btn-sort">Code</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="units-wrapper">
-                <div class="row">
-                  <div class="col">
-                    <div class="custom-control-group">
-                      <div class="label">Volume</div>
-                      <div class="form-control control-switcher" data-unit-type="volume">
-                        <div class="data-items-wrapper"></div>
-                        <span class="carets">
-                          <i class="fa fa-caret-up top-data-item"></i>
-                          <i class="fa fa-caret-down bottom-data-item"></i>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="custom-control-group">
-                      <div class="label">Value</div>
-                      <div class="form-control control-switcher" data-unit-type="value">
-                        <div class="data-items-wrapper"></div>
-                        <span class="carets">
-                          <i class="fa fa-caret-up top-data-item"></i>
-                          <i class="fa fa-caret-down bottom-data-item"></i>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="custom-control-group">
-                      <div class="label">Price</div>
-                      <div class="form-control control-switcher" data-unit-type="price">
-                        <div class="data-items-wrapper"></div>
-                        <span class="carets">
-                          <i class="fa fa-caret-up top-data-item"></i>
-                          <i class="fa fa-caret-down bottom-data-item"></i>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="custom-control-group">
-                      <div class="label">Area</div>
-                      <div class="form-control control-switcher" data-unit-type="area">
-                        <div class="data-items-wrapper"></div>
-                        <span class="carets">
-                          <i class="fa fa-caret-up top-data-item"></i>
-                          <i class="fa fa-caret-down bottom-data-item"></i>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="custom-control-group">
-                      <div class="label">Livestock</div>
-                      <div class="form-control control-switcher" data-unit-type="livestock">
-                        <div class="data-items-wrapper"></div>
-                        <span class="carets">
-                          <i class="fa fa-caret-up top-data-item"></i>
-                          <i class="fa fa-caret-down bottom-data-item"></i>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="custom-control-group">
-                      <div class="label">Yield</div>
-                      <div class="form-control control-switcher" data-unit-type="yield">
-                        <div class="data-items-wrapper"></div>
-                        <span class="carets">
-                          <i class="fa fa-caret-up top-data-item"></i>
-                          <i class="fa fa-caret-down bottom-data-item"></i>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="custom-control-group">
-                      <div class="label">Per capita</div>
-                      <div class="form-control control-switcher" data-unit-type="per capita">
-                        <div class="data-items-wrapper"></div>
-                        <span class="carets">
-                          <i class="fa fa-caret-up top-data-item"></i>
-                          <i class="fa fa-caret-down bottom-data-item"></i>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <div class="btns-wrapper">
-                      <button type="button" class="btn btn-primary btn-find-data">Find data</button>
-                      <button type="button" class="btn-link btn-link-danger btn-clear">Clear</button>
+                  <div class="col-md-3">
+                    <div class="left-actions-wrapper">
+                      <a href="#" class="link link-gray link-close-project">Закрыть проект</a>
+                      <a href="#" class="link link-gray link-remove">Удалить</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="data-viewer no-data">
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <h4 class="h4 corp-heading">Cats didn't find anything in the box yet, <br>so have a nice analyze meow :)</h4>
-                  <img src="src/images/no-data-found.png" alt="No data was found">
+            <!-- / Project item ends -->
+            <!-- Project item starts -->
+            <div class="project-item std-content-box project-item_opened">
+              <h2 class="custom-h2">Название проекта, который раскрыт</h2>
+              <div class="project-item-actions">
+                <div class="row">
+                  <div class="col-md-9">
+                    <h4 class="custom-h4 vacancies-amount">2 вакансии</h4>
+                    <a href="#" class="link link-add-vacancy">Добавить вакансию</a>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="left-actions-wrapper">
+                      <a href="#" class="link link-gray link-close-project">Закрыть проект</a>
+                      <a href="#" class="link link-gray link-remove">Удалить</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="vacancies-wrapper">
+                <div class="vacancy-item">
+                  <h4 class="custom-h4">Первая вакансия</h4>
+                  <div class="vacancy-item-info-actions">
+                    <div class="row">
+                      <div class="col-md-9">
+                        <p class="p-sm p-info vacancy-status"><span class="material-icon-png search-icon"></span> Вакансия открыта, идет подбор кандидатов</p>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="left-actions-wrapper">
+                          <a href="#" class="link link-gray link-close-vacancy">Закрыть вакансию</a>
+                          <a href="#" class="link link-gray link-remove">Удалить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="vacancy-item">
+                  <h4 class="custom-h4">Вторая вакансия</h4>
+                  <div class="vacancy-item-info-actions">
+                    <div class="row">
+                      <div class="col-md-9">
+                        <p class="p-sm p-info vacancy-status"><span class="material-icon-png search-icon"></span> Вакансия открыта, идет подбор кандидатов</p>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="left-actions-wrapper">
+                          <a href="#" class="link link-gray link-close-vacancy">Закрыть вакансию</a>
+                          <a href="#" class="link link-gray link-remove">Удалить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="vacancy-item vacancy-item_closed">
+                  <h4 class="custom-h4">Третья вакансия</h4>
+                  <div class="vacancy-item-info-actions">
+                    <div class="row">
+                      <div class="col-md-9">
+                        <p class="p-sm p-info vacancy-status"><span class="material-icon-png check-icon"></span> Вакансия закрыта, сотрудник нанят</p>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="left-actions-wrapper">
+                          <a href="#" class="link link-open-vacancy">Открыть вакансию</a>
+                          <a href="#" class="link link-gray link-remove">Удалить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+            <!-- / Project item ends -->
+            <!-- Project item starts -->
+            <div class="project-item std-content-box">
+              <h2 class="custom-h2">Название второго проекта</h2>
+              <div class="project-item-actions">
+                <div class="row">
+                  <div class="col-md-9">
+                    <h4 class="custom-h4 vacancies-amount">55 вакансий</h4>
+                    <a href="#" class="link link-add-vacancy">Добавить вакансию</a>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="left-actions-wrapper">
+                      <a href="#" class="link link-gray link-close-project">Закрыть проект</a>
+                      <a href="#" class="link link-gray link-remove">Удалить</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- / Project item ends -->
+            <!-- Project item starts -->
+            <div class="project-item std-content-box project_closed">
+              <h2 class="custom-h2">Очень-очень длинное название третьего проекта, на удивление длинное и непрактичное название, которое переносится аж на две строки!</h2>
+              <div class="project-item-actions">
+                <div class="row">
+                  <div class="col-md-9">
+                    <div class="closed-project-info-wrapper">
+                      <h4 class="custom-h4 vacancies-amount">55 вакансий</h4>
+                      <p class="p-sm p-info project-status"><span class="material-icon-png check-icon"></span> Проект закрыт, сотрудники наняты</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="left-actions-wrapper">
+                      <a href="#" class="link link-open-project">Открыть проект</a>
+                      <a href="#" class="link link-gray link-remove">Удалить</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- / Project item ends -->
           </div>
         </div>
       </main>
 
       <footer class="footer">
-        <div class="footer-content-wrapper">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-5 col-xs-12">
-                <div class="contacts-copyright">
-                  <p class="p">Ask us 44-20-3239-3063 (UK); 1-415-799-8701 (US)</p>
-                  <p class="p">&copy; 2018 IndexBox, Inc.</p>
-                </div>
-              </div>
-              <div class="col-md-7 col-xs-12">
-                <nav class="nav bottom-nav">
-                  <ul class="list">
-                    <li class="nav-item">
-                      <a href="#" class="link">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="link">Privacy Policy</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="link">Cookie</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="link">Terms Of Service</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="link">Pricing Plan</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="link">Metadata and Definitions</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
       </footer>
     </div>
 

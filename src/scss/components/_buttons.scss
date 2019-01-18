@@ -2,14 +2,18 @@
   display: inline-block;
   padding: $btn-padding-y $btn-padding-x;
   background-color: $custom-mid-gray;
+  box-shadow: $box-shadow-custom;
   border: $btn-border-width solid $btn-border-color;
+  border-radius: $custom-border-radius;
   text-align: center;
-  font-family: $font-family-base;
+  font-family: $font-family-base-medium;
+  font-size: 1.4rem;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
   line-height: $btn-line-height;
   font-weight: $btn-font-weight;
+  text-transform: uppercase;
   color: $custom-dark-gray;
   &:not(.disabled),
   &:not(:disabled) {
@@ -25,18 +29,17 @@
     opacity: $btn-disabled-opacity;
   }
   &-primary {
-    background: $bright-blue;
+    background: $custom-green;
     color: $white;
     &:hover {
-      background: darken($bright-blue, 10%);
+      background: $custom-green-hover;
+    }
+    &:focus {
+      background: $custom-green-pressed;
     }
   }
   &-danger {
-    background: $lilac-pink;
-    color: $white;
-    &:hover {
-      background: darken($lilac-pink, 10%);
-    }
+    
   }
 }
 
@@ -61,14 +64,18 @@
     color: $btn-link-disabled-color;
   }
   &-danger {
-    color: $lilac-pink;
-    &:hover {
-      color: darken($lilac-pink, 10%) !important;
-    }
+    
   }
 }
 
 .btn-fullwidth {
   display: block;
   width: 100%;
+}
+
+
+// Theme
+
+.add-project-btn {
+  width: 21.5rem;
 }
