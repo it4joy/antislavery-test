@@ -79,7 +79,7 @@
 // Custom headings
 
 .extra-heading {
-  font-family: 'Akzidenz-Grotesk Pro Medium', Tahoma, sans-serif;
+  font-family: Tahoma, sans-serif;
   font-size: 8.2rem;
   color: $custom-heading-black;
 }
@@ -97,15 +97,4 @@
 
 // Icons
 
-.material-icon-png {
-  display: inline-block;
-  margin-right: 1rem;
-  width: 1.8rem;
-  height: 1.8rem;
-  &.search-icon {
-    background: url("../imgs/search.png") no-repeat center;
-  }
-  &.check-icon {
-    background: url("../imgs/check.png") no-repeat center;
-  }
-}
+

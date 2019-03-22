@@ -48,14 +48,6 @@ option[attr="disabled"] {
 
 // Theme
 
-.custom-inline-control-group {
-  .label {
-    display: inline-block;
-    margin-bottom: 0;
-    margin-left: 0.8rem;
-  }
-}
-
 .custom-control-group {
   margin-bottom: 1.5rem;
   .label {
@@ -64,46 +56,5 @@ option[attr="disabled"] {
     font-family: $font-family-base-medium;
     font-size: $font-size-sm;
     color: $custom-mid-gray;
-  }
-}
-
-.custom-select-wrapper {
-  position: relative;
-  &::before {
-    position: absolute;
-    top: 50%;
-    right: 0.3rem;
-    z-index: 2;
-    display: inline-block;
-    margin-top: -1rem;
-    width: 2rem;
-    height: 2rem;
-    background-color: $white;
-    color: $custom-mid-gray;
-  }
-  &.unfolded::before {
-    
-  }
-}
-
-.custom-checkbox {
-  position: relative;
-  margin-right: 0.8rem;
-  &::before {
-    content: "";
-    position: absolute;
-    top: -3px;
-    width: 18px;
-    height: 18px;
-    background: $custom-light-gray;
-    border: 2px solid $custom-gray-300;
-    border-radius: $custom-border-radius;
-  }
-  &:hover::before {
-    border-color: $custom-gray-500;
-  }
-  &:checked::before {
-    background: url("../imgs/checked.png") no-repeat -1px -1px $custom-light-gray;
-    border-color: $custom-green;
   }
 }

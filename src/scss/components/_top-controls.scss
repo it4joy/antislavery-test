@@ -1,9 +1,0 @@
-.top-controls {
-  padding: 7.6rem 0 1.6rem;
-  .custom-inline-control-group {
-    padding: 0 .8rem;
-  }
-  .add-project-btn-wrapper {
-    @include display-flex-mixin(flex, row, flex-end, center);
-  }
-}
