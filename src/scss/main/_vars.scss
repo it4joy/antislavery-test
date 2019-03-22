@@ -14,13 +14,14 @@ $gray-900: #212529;
 $black: #000000;
 
 $custom-light-gray: #f1f1f1;
+$custom-premid-gray: #ebebeb;
 $custom-mid-gray: lighten($black, 60%);
 $custom-dark-gray: #272831;
 $custom-heading-black: #1a1818;
 $custom-black: #343434;
 
 $custom-gray-100: $custom-light-gray;
-$custom-gray-200: rgba(0, 0, 0, 0.12);
+$custom-gray-200: $custom-premid-gray;
 $custom-gray-300: rgba(0, 0, 0, 0.37);
 $custom-gray-400: rgba(0, 0, 0, 0.47);
 $custom-gray-500: rgba(0, 0, 0, 0.57);
@@ -29,14 +30,10 @@ $bright-blue: #4e82fe;
 $blue: #6596ff;
 $blue-turquoise: #5aa4ff;
 
-$custom-green: #00aa87;
-$custom-green-hover: #00816c;
-$custom-green-pressed: #00826c;
-$custom-green-link-visited: #006554;
-
 $body-bg: $custom-light-gray;
 $body-color: $custom-black;
 
+$plug: $body-color;
 
 // Typography
 
@@ -66,10 +63,10 @@ $h4-font-size: $font-size-lg + 0.8rem;
 $h5-font-size: $font-size-lg + 0.4rem;
 $h6-font-size: $font-size-lg;
 
-$link-color: $custom-green;
+$link-color: $plug;
 $link-decoration: none;
-$link-hover-color: $custom-green-hover;
-$link-visited-color: $custom-green-link-visited;
+$link-hover-color: $plug;
+$link-visited-color: $plug;
 $link-hover-decoration: none;
 
 $headings-margin-bottom: ($spacer / 2);
@@ -94,6 +91,7 @@ $border-color: $gray-300; // tmp
 $border-radius: .6rem;
 $border-radius-sm: .3rem;
 $border-radius-lg: .9rem;
+$border-radius-50-percents: 50%;
 $custom-border-radius: .2rem;
 
 $box-shadow: 0 .1rem .3rem rgba($black, .08), 0 .1rem .1rem rgba($black, .05);

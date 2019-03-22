@@ -1,8 +1,8 @@
 .btn {
+  position: relative;
   display: inline-block;
   padding: $btn-padding-y $btn-padding-x;
   background-color: $custom-mid-gray;
-  box-shadow: $box-shadow-custom;
   border: $btn-border-width solid $btn-border-color;
   border-radius: $custom-border-radius;
   text-align: center;
@@ -29,17 +29,24 @@
     opacity: $btn-disabled-opacity;
   }
   &-primary {
-    background: $custom-green;
+    background: $plug;
     color: $white;
     &:hover {
-      background: $custom-green-hover;
+      background: $plug;
     }
     &:focus {
-      background: $custom-green-pressed;
+      background: $plug;
     }
   }
   &-danger {
     
+  }
+  &-light {
+    background: $custom-gray-200;
+  }
+  &-dark {
+    background: $custom-black;
+    color: $white;
   }
 }
 
