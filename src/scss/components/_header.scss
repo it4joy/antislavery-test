@@ -1,0 +1,10 @@
+.header {
+  padding: 1.8rem;
+  height: 7rem;
+  background: $white;
+  box-shadow: $box-shadow-custom;
+  .logo {
+    width: 18rem;
+    background: url(../imgs/logo.png) no-repeat center;
+  }
+}
