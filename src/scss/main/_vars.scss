@@ -16,7 +16,7 @@ $black: #000000;
 $custom-light-gray: #f1f1f1;
 $custom-premid-gray: #ebebeb;
 $custom-mid-gray: lighten($black, 60%);
-$custom-dark-gray: #272831;
+//$custom-dark-gray: #272831;
 $custom-heading-black: #1a1818;
 $custom-black: #343434;
 
@@ -25,6 +25,7 @@ $custom-gray-200: $custom-premid-gray;
 $custom-gray-300: rgba(0, 0, 0, 0.37);
 $custom-gray-400: rgba(0, 0, 0, 0.47);
 $custom-gray-500: rgba(0, 0, 0, 0.57);
+$custom-gray-600: rgba(0, 0, 0, 0.67);
 
 $bright-blue: #4e82fe;
 $blue: #6596ff;
@@ -65,7 +66,7 @@ $h6-font-size: $font-size-lg;
 
 $link-color: $plug;
 $link-decoration: none;
-$link-hover-color: $plug;
+$link-hover-color: $custom-gray-600;
 $link-visited-color: $plug;
 $link-hover-decoration: none;
 

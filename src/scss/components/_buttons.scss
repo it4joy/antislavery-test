@@ -14,7 +14,7 @@
   line-height: $btn-line-height;
   font-weight: $btn-font-weight;
   text-transform: uppercase;
-  color: $custom-dark-gray;
+  color: $custom-black;
   &:not(.disabled),
   &:not(:disabled) {
     &:hover {
@@ -43,10 +43,16 @@
   }
   &-light {
     background: $custom-gray-200;
+    &:hover {
+      background: $custom-gray-100;
+    }
   }
   &-dark {
     background: $custom-black;
     color: $white;
+    &:hover {
+      background: $custom-gray-600;
+    }
   }
 }
 

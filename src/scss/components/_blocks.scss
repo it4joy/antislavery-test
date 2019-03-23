@@ -46,4 +46,9 @@
       background-image: url(../imgs/rezume-like-icon.png);
     }
   }
+  .link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
